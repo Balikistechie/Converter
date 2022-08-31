@@ -1,0 +1,36 @@
+<!DOCTYPE HTML>
+<html>
+  <head></head>
+  <style>
+    body{
+      background: #808080;
+      font-family:Monospace;
+      font-size:15px;
+    }
+    input{
+      width:70%;
+      height:30px;
+      border-radius:8px;
+    }
+
+  </style>
+  <body>
+    <p>
+      <label>Inches</label>
+   <input id="inputInches" type="number"
+   placeholder="inches" oninput="inchesConverter(this.value)"
+    onchange="inchesConverter(this.value)">
+    </p>
+   <strong> <p>Ft: <span id="outputFeet"></span></p></strong>
+   
+   
+    <p>
+      <label>Feet</label>
+   <input id="inputFt" type="number"
+   placeholder="feet" oninput="ftConverter(this.value)"
+    onchange="ftConverter(this.value)">
+    </p>
+   <strong> <p>Inches: <span id="outputInches"></span></p></strong>
+  </body>
+  <script src="Converter.js"></script>
+</html>
